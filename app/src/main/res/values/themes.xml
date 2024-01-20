@@ -32,16 +32,16 @@
     <style name="Theme.LivPol.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="TitleTextSize">
-        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:fontFamily">@font/libre_franklin_medium</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">@dimen/title_text_size</item>
         <item name="android:textColor">@color/text_color</item>
     </style>
 
     <style name="DetailTextSize">
-        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:fontFamily">@font/libre_franklin_medium</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textSize">@dimen/detail_text_size</item>
         <item name="android:textColor">@color/my_light_primary</item>
     </style>
 
