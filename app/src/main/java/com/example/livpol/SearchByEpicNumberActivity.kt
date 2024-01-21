@@ -2,10 +2,14 @@ package com.example.livpol
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.livpol.databinding.ActivitySearchByEpicNumberBinding
 
 class SearchByEpicNumberActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivitySearchByEpicNumberBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_search_by_epic_number)
+        binding = ActivitySearchByEpicNumberBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }

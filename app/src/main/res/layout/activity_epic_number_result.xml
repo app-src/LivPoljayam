@@ -328,7 +328,7 @@
                     android:layout_weight="1"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text=" fcvgbhnjbhnjmhnjmhjmkstring/locality"
+                    android:text="@string/locality"
                     android:textAppearance="@style/DetailTextSize" />
 
             </LinearLayout>
