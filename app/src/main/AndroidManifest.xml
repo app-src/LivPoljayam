@@ -13,6 +13,12 @@
         android:theme="@style/Theme.LivPol"
         tools:targetApi="31">
         <activity
+            android:name=".EpicNumberResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchByEpicNumberActivity"
+            android:exported="false" />
+        <activity
             android:name=".DataActivity"
             android:exported="false" />
         <activity
