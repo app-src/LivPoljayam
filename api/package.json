@@ -7,10 +7,12 @@
     "start": "nodemon main.js"
   },
   "dependencies": {
+    "@ngrok/ngrok": "^0.9.1",
     "axios": "^1.6.5",
     "express": "^4.18.2",
     "jimp": "^0.22.10",
     "node-tesseract-ocr": "^2.2.1",
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.0.3",
+    "wrangler": "^3.23.0"
   }
 }

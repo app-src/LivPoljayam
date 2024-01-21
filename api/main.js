@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000; 
+const port = 5555; 
 
 const axios = require("axios");
 const Jimp = require("jimp");
@@ -151,6 +151,20 @@ app.get('/getVoterInfo/:epicno', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+app.get('/', async (req, res) => {
+  
+  try {
+      const data = await getUserInfo(epicno);
+      if (data) {
+          res.json(data);
+      } else {
+          res.status(404).json({ message: 'Hello User' });
+      }
+  } catch (error) {
+      res.status(500).json({ message: 'Internal Server Error' });
+  }
 });
+
+app.listen(5555, "localhost", () => {
+  console.log('Server running on port 5555') 
+})
