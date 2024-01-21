@@ -165,6 +165,6 @@ app.get('/', async (req, res) => {
   }
 });
 
-app.listen(5555, "localhost", () => {
+app.listen(5555, () => {
   console.log('Server running on port 5555') 
 })
